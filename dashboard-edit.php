@@ -35,7 +35,7 @@
             $getUsers->execute();
             $users=$getUsers->fetchAll();
         ?>
-        <div class="table-responsive">
+        <div class="table-div">
             <table class="table table-dark table-striped">
                 <thead>
                     <th scope="col">ID</th>
@@ -53,7 +53,7 @@
                         <td><?= $user['firstname'];?></td>
                         <td><?= $user['lastname'];?></td>
                         <td><?= $user['username'];?></td>
-                        <td><?= "<a href='delete.php?id=$user[id]'>Delete</a>"?></td>
+                        <td><?= "<a href='edit.php?id=$user[id]'>Edit</a>"?></td>
                     </tr>
                     <?php
                     }

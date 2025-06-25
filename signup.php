@@ -11,7 +11,7 @@
         $sqlQuery->bindParam(':firstname', $firstname);
         $sqlQuery->bindParam(':lastname', $lastname);
         $sqlQuery->bindParam(':username', $username);
-
+        header("location:dashboard.php");
         $sqlQuery->execute();
     }
 ?>
